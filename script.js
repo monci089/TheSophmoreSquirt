@@ -1,13 +1,105 @@
+var playerlist=[]
 class targetlink{
   constructor(target){
     this.target=target
+    playerlist.append(this)
   }
 }
-console.log("d")
+let Abby = new targetlink();
+let Aixa = new targetlink();
+let Alina = new targetlink();
+let Amber = new targetlink();
+let Arden = new targetlink();
+let Asher = new targetlink();
+let Bella = new targetlink();
+let Bjorn = new targetlink();
+let Chiara = new targetlink();
+let Cielo = new targetlink();
+let Clara = new targetlink();
+let Crenna = new targetlink();
+let Crosby = new targetlink();
+let Fern = new targetlink();
+let Frances = new targetlink();
+let Gavin = new targetlink();
+let Grace = new targetlink();
+let Gracie = new targetlink();
+let Halsey = new targetlink();
+let John = new targetlink();
+let Jonah = new targetlink();
+let Joshua = new targetlink();
+let Kaleb = new targetlink();
+let Kaydence = new targetlink();
+let Kepler = new targetlink();
+let Lenore = new targetlink();
+let Leny = new targetlink();
+let Lexi = new targetlink();
+let Linden = new targetlink();
+let Logan = new targetlink();
+let Luciano = new targetlink();
+let Luella = new targetlink();
+let Lynn = new targetlink();
+let Mdison = new targetlink();
+let Marie = new targetlink();
+let Mhalik = new targetlink();
+let Noah = new targetlink();
+let River = new targetlink();
+let SilasK = new targetlink();
+let SilasL = new targetlink();
+let Silja = new targetlink();
+let Soren = new targetlink();
+let Teri = new targetlink();
+let Tristyn = new targetlink();
+let Ursula = new targetlink();
+let Wylder = new targetlink();
+Abby.target = null;
+Aixa.target = null;
+Alina.target = null;
+Amber.target = null;
+Arden.target = null;
+Asher.target = null;
+Bella.target = null;
+Bjorn.target = null;
+Chiara.target = null;
+Cielo.target = null;
+Clara.target = null;
+Crenna.target = null;
+Crosby.target = null;
+Fern.target = null;
+Frances.target = null;
+Gavin.target = null;
+Grace.target = null;
+Gracie.target = null;
+Halsey.target = null;
+John.target = null;
+Jonah.target = null;
+Joshua.target = null;
+Kaleb.target = null;
+Kaydence.target = null;
+Kepler.target = null;
+Lenore.target = null;
+Leny.target = null;
+Lexi.target = null;
+Linden.target = null;
+Logan.target = null;
+Luciano.target = null;
+Luella.target = null;
+Lynn.target = null;
+Mdison.target = null;
+Marie.target = Gavin;
+Mhalik.target = null;
+Noah.target = null;
+River.target = null;
+SilasK.target = null;
+SilasL.target = null;
+Silja.target = null;
+Soren.target = null;
+Teri.target = null;
+Tristyn.target = null;
+Ursula.target = null;
+Wylder.target = null;
 function enter(){
-  console.log("f")
-  console.log("p")
+  console.log(marie.target)
   const element = document.getElementById("text");
-  element.innerHTML = "Newe Heading";
+  element.innerHTML = "list";
 }
 enter()
