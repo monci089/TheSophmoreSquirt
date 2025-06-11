@@ -113,7 +113,7 @@ function enter(){
   var i=0;
   var finished=[];
   var pllength=playerlist.length;
-  while (i<pllength){
+  while (i<pllength-1){
     console.log(targetlist)
       if (playerlist[i].target.name!="Unknown" && isnotin(playerlist[i].name, finished)){
 
@@ -128,6 +128,7 @@ function enter(){
       }
       i++;
   }
+  document.write(document.getElementById("text").innerHTML)
   console.log(targetlist);
 }
 enter()
