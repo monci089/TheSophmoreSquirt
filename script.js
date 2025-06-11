@@ -132,8 +132,7 @@ function enter(){
       }
       i++;
   }
-  console.log(targetlist);
-  document.write(document.getElementById("text").innerHTML)
+  document.getElementById("text").value="hello"
   console.log(targetlist);
 }
 enter()
