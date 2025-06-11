@@ -5,7 +5,7 @@ class targetlink{
 }
 console.log("d")
 function enter(){
-  var x =1
+  console.log("f")
   const element = document.getElementById("text");
   element.innerHTML = "Newe Heading";
 }
