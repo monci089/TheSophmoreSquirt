@@ -98,8 +98,8 @@ Tristyn.target = null;
 Ursula.target = null;
 Wylder.target = null;
 function enter(){
-  console.log(marie.target)
   const element = document.getElementById("text");
   element.innerHTML = "list";
+  enter()
 }
 enter()
