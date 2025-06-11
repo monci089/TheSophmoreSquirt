@@ -6,5 +6,6 @@ class targetlink{
   
 function enter(){
   var x =1
+  element.innerHTML = "Newe Heading";
 }
 function()
