@@ -132,7 +132,7 @@ function enter(){
       }
       i++;
   }
-  document.getElementById("text").value="hello"
+  document.getElementById("text").innerText="hello"
   console.log(targetlist);
 }
 enter()
