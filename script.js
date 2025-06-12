@@ -3,7 +3,7 @@ var hasrun=true
 if(hasrun){
   class targetlink{
     constructor(name){
-      this.target=null
+      this.target="Unknown"
       this.name=name
       playerlist.push(this)
     }
@@ -56,7 +56,7 @@ if(hasrun){
   let Wylder = new targetlink("Wylder");
   let Unknown= new targetlink("Unknown")
   Abby.target = John;
-  Aixa.target = Unknown;
+  Aixa.target = Abby;
   Alina.target = Unknown;
   Amber.target = Jonah;
   Arden.target = Tristyn;
@@ -75,7 +75,7 @@ if(hasrun){
   Gracie.target = Joshua;
   Halsey.target = Lenore;
   John.target = Unknown;
-  Jonah.target = Jonah;
+  Jonah.target = Luciano;
   Joshua.target = Clara;
   Kaleb.target = Unknown;
   Kaydence.target = Unknown;
@@ -115,28 +115,34 @@ function enter(){
   var targetlist=[]
   var i=0;
   var finished=[];
+  var mainfinished=[];
   var pllength=playerlist.length;
   while (i<pllength-1){
-    console.log(targetlist)
-    console.log(i)
       if (playerlist[i].target.name!="Unknown" && isnotin(playerlist[i].name, finished)){
-
-        targetlist.push(playerlist[i].name);
+        if (isnotin(playerlist[i].target.name, mainfinished)){
+          targetlist.push(playerlist[i].name);
         targetlist.push("-->");
         targetlist.push(playerlist[i].target.name);
         finished.push(playerlist[i].target.name);
+        mainfinished.push(playerlist[i].name);
+        }else{
+          targetlist.splice(targetlist.indexOf(playerlist[i].target.name), 0, "-->");
+          targetlist.splice(targetlist.indexOf(playerlist[i].target.name)-1, 0, playerlist[i].name);
+          mainfinished.push(playerlist[i]).name;
+        }
+        
       }
       if(!(isnotin(playerlist[i].name, finished))){
         targetlist.splice(targetlist.indexOf(playerlist[i].name) + 1, 0, playerlist[i].target.name);
         targetlist.splice(targetlist.indexOf(playerlist[i].name) + 1, 0, "-->");
+        finished.push(playerlist[i].target.name);
       }
       i++;
   }
   for (var c=0;c<targetlist.length; c++){
-    console.log("d")
       if(targetlist[c]!="-->"){
         if (!(c%2==0)){
-        targetlist.splice(c,0,"(::::::)")
+        targetlist.splice(c,0,"|||||||||||||||||||||||||||||||||||")
         c++
       } 
       }
