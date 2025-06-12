@@ -140,12 +140,20 @@ function enter(){
   for (var c=0;c<targetlist.length; c++){
       if(targetlist[c]!="-->"){
         if (!(c%2==0)){
-        targetlist.splice(c,0,"|||||||||||||||||||||||||||||||||||")
+        targetlist.splice(c,0,"|||||||||||||||||||||||||||||||||||");
         c++
       } 
       }
   }
-  document.getElementById("text").innerText=targetlist
+  document.getElementById("text").innerText=targetlist;
   console.log(targetlist);
+
+
 }
 enter()
+//inputvalue=document.getElementById("input");
+//outputvalue=document.getElementById("output");
+//inputvalue.addEventListener('input', function(event) {
+  //console.log("d")
+  //outputvalue.textContent=inputvalue.value;
+//}
