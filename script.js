@@ -78,8 +78,6 @@ if(hasrun){
   Jonah.target = Luciano;
   Joshua.target = Clara;
   Kaleb.target = Unknown;
-  Kaydence.target = Unknown;
-  Kepler.target = Unknown;
   Lenore.target = Unknown;
   Leny.target = Wylder;
   Lexi.target = Luella;
