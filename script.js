@@ -40,7 +40,7 @@ if(hasrun){
   let Logan = new targetlink("Logan");
   let Luciano = new targetlink("Luciano");
   let Luella = new targetlink("Luella");
-  let Lynn = new targetlink("Lynn");
+  let Emma = new targetlink("Emma");
   let Mdison = new targetlink("Mdison");
   let Marie = new targetlink("Marie");
   let Mhalik = new targetlink("Mhalik");
@@ -70,7 +70,7 @@ if(hasrun){
   Crosby.target = Unknown;
   Fern.target = Unknown;
   Frances.target = Unknown;
-  Gavin.target = Grace;
+  Gavin.target = Unknown;
   Grace.target = Unknown;
   Gracie.target = Unknown;
   Halsey.target = Unknown;
@@ -87,7 +87,7 @@ if(hasrun){
   Logan.target = Unknown;
   Luciano.target = Unknown;
   Luella.target = Unknown;
-  Lynn.target = Unknown;
+  Emma.target = Unknown;
   Mdison.target = Unknown;
   Marie.target = Gavin;
   Mhalik.target = Unknown;
@@ -96,7 +96,7 @@ if(hasrun){
   SilasK.target = Unknown;
   SilasL.target = Unknown;
   Silja.target = Unknown;
-  Soren.target = Unknown;
+  Soren.target = Emma;
   Teri.target = Unknown;
   Tristyn.target = Amber;
   Ursula.target = Unknown;
@@ -132,7 +132,16 @@ function enter(){
       }
       i++;
   }
-  document.getElementById("text").innerText="hello"
+  for (var c=0;c<targetlist.length; c++){
+    console.log("d")
+      if(targetlist[c]!="-->"){
+        if (!(c%2==0)){
+        targetlist.splice(c,0,"(::::::)")
+        c++
+      } 
+      }
+  }
+  document.getElementById("text").innerText=targetlist
   console.log(targetlist);
 }
 enter()
