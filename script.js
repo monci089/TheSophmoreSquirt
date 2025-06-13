@@ -31,8 +31,6 @@ if(hasrun){
   let Jonah = new targetlink("Jonah");
   let Joshua = new targetlink("Joshua");
   let Kaleb = new targetlink("Kaleb");
-  let Kaydence = new targetlink("Kaydence");
-  let Kepler = new targetlink("Kepler");
   let Lenore = new targetlink("Lenore");
   let Leny = new targetlink("Leny");
   let Lexi = new targetlink("Lexi");
@@ -56,7 +54,7 @@ if(hasrun){
   let Wylder = new targetlink("Wylder");
   let Unknown= new targetlink("Unknown")
   Abby.target = John;
-  Aixa.target = Abby;
+  Aixa.target = Unknown;
   Alina.target = Unknown;
   Amber.target = Jonah;
   Arden.target = Tristyn;
@@ -69,7 +67,7 @@ if(hasrun){
   Crenna.target = Crosby;
   Crosby.target = SilasK;
   Fern.target = Grace;
-  Frances.target = Unknown;
+  Frances.target = Teri;
   Gavin.target = Unknown;
   Grace.target = Unknown;
   Gracie.target = Joshua;
@@ -90,7 +88,7 @@ if(hasrun){
   Marie.target = Gavin;
   Mhalik.target = Unknown;
   Noah.target = Unknown;
-  River.target = Unknown;
+  River.target = Noah;
   SilasK.target = Unknown;
   SilasL.target = Silja;
   Silja.target = Unknown;
@@ -109,20 +107,26 @@ function isnotin(name, list){
 }
 return true;
 }
+var targetlist=[]
+var filler="|||||||||||||||||||||||||||||||||||"
 function enter(){
-  var targetlist=[]
+  
   var i=0;
   var finished=[];
   var mainfinished=[];
   var pllength=playerlist.length;
   while (i<pllength-1){
       if (playerlist[i].target.name!="Unknown" && isnotin(playerlist[i].name, finished)){
+        
         if (isnotin(playerlist[i].target.name, mainfinished)){
+          
+           
           targetlist.push(playerlist[i].name);
-        targetlist.push("-->");
-        targetlist.push(playerlist[i].target.name);
-        finished.push(playerlist[i].target.name);
-        mainfinished.push(playerlist[i].name);
+          targetlist.push("-->");
+          targetlist.push(playerlist[i].target.name);
+          finished.push(playerlist[i].target.name);
+          mainfinished.push(playerlist[i].name);
+          console.log(targetlist)
         }else{
           targetlist.splice(targetlist.indexOf(playerlist[i].target.name), 0, "-->");
           targetlist.splice(targetlist.indexOf(playerlist[i].target.name)-1, 0, playerlist[i].name);
@@ -140,7 +144,7 @@ function enter(){
   for (var c=0;c<targetlist.length; c++){
       if(targetlist[c]!="-->"){
         if (!(c%2==0)){
-        targetlist.splice(c,0,"|||||||||||||||||||||||||||||||||||");
+        targetlist.splice(c,0,filler);
         c++
       } 
       }
@@ -151,9 +155,77 @@ function enter(){
 
 }
 enter()
-//inputvalue=document.getElementById("input");
-//outputvalue=document.getElementById("output");
-//inputvalue.addEventListener('input', function(event) {
-  //console.log("d")
-  //outputvalue.textContent=inputvalue.value;
-//}
+inputvalue=document.getElementById("input");
+outputvalue=document.getElementById("output");
+outputvalue2=document.getElementById("output2")
+document.getElementById("button").addEventListener('click', function(event) {
+  for(var i=0; i<playerlist.length; i++){
+    if (inputvalue.value==playerlist[i].name){
+      var possibleassasin=[];
+      //finds the possible assasains
+      for(var c=0; c<playerlist.length; c++){
+        if (playerlist[c].target.name==inputvalue.value){
+          possibleassasin.push(playerlist[c].name)
+          c=playerlist.length+10
+        }else{
+          if(c==playerlist.length-1){
+            for(var n=0; n<playerlist.length; n++){
+              if(playerlist[n].target.name=="Unknown" && playerlist[n].name!=inputvalue.value){
+                possibleassasin.push(playerlist[n].name)
+              }
+            }
+            
+            if(playerlist[i].target.name!="Unknown"){
+              var firstperson=targetlist.indexOf(inputvalue.value)
+              for(var j=0; j<targetlist.length; j++){
+                console.log(targetlist[firstperson+j-1])
+                if(targetlist[firstperson+j]==filler){
+                  possibleassasin.splice(possibleassasin.indexOf(targetlist[firstperson+j-1]),1)
+                  j=targetlist.length+10
+                }
+            }
+          }
+        }
+      }
+    }
+          i=playerlist.length;
+          outputvalue.innerText="possible assasains/confirmed assasain: "+possibleassasin
+        /*
+      //finds the possible targets
+      var possibleassasin=[];
+      for(var c=0; c<playerlist.length; c++){
+        if (playerlist[c].target.name==inputvalue.value){
+          possibleassasin.push(playerlist[c].name)
+          c=playerlist.length+10
+        }else{
+          if(c==playerlist.length-1){
+            for(var n=0; n<playerlist.length; n++){
+              if(playerlist[n].target.name=="Unknown" && playerlist[n].name!=inputvalue.value){
+                possibleassasin.push(playerlist[n].name)
+              }
+            }
+            
+            if(playerlist[i].target.name!="Unknown"){
+              var firstperson=targetlist.indexOf(inputvalue.value)
+              for(var j=0; j<targetlist.length; j++){
+                console.log(targetlist[firstperson+j-1])
+                if(targetlist[firstperson+j]==filler){
+                  possibleassasin.splice(possibleassasin.indexOf(targetlist[firstperson+j-1]),1)
+                  j=targetlist.length+10
+                }
+            }
+          }
+        }
+      }
+    }
+          i=playerlist.length;
+          outputvalue.innerText="possible assasains/confirmed assasain: "+possibleassasin
+        
+        */
+    }else{
+      if(i==playerlist.length-1){
+      outputvalue.innerText="Enter a correct name, capitalized, not eliminated."
+      }
+    }
+  }
+});
