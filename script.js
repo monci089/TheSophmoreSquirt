@@ -13,7 +13,6 @@ if(hasrun){
   let Alina = new targetlink("Alina");
   let Amber = new targetlink("Amber");
   let Arden = new targetlink("Arden");
-  let Asher = new targetlink("Asher");
   let Bella = new targetlink("Bella");
   let Bjorn = new targetlink("Bjorn");
   let Chiara = new targetlink("Chiara");
@@ -30,7 +29,6 @@ if(hasrun){
   let John = new targetlink("John");
   let Jonah = new targetlink("Jonah");
   let Joshua = new targetlink("Joshua");
-  let Kaleb = new targetlink("Kaleb");
   let Lenore = new targetlink("Lenore");
   let Leny = new targetlink("Leny");
   let Lexi = new targetlink("Lexi");
@@ -58,7 +56,6 @@ if(hasrun){
   Alina.target = Unknown;
   Amber.target = Jonah;
   Arden.target = Tristyn;
-  Asher.target = Unknown;
   Bella.target = Gracie;
   Bjorn.target = River;
   Chiara.target = Unknown;
@@ -75,7 +72,6 @@ if(hasrun){
   John.target = Unknown;
   Jonah.target = Luciano;
   Joshua.target = Clara;
-  Kaleb.target = Unknown;
   Lenore.target = Unknown;
   Leny.target = Wylder;
   Lexi.target = Luella;
