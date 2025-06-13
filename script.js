@@ -69,7 +69,7 @@ if(hasrun){
   Grace.target = Unknown;
   Gracie.target = Joshua;
   Halsey.target = Lenore;
-  John.target = Unknown;
+  John.target = Alina;
   Jonah.target = Luciano;
   Joshua.target = Clara;
   Lenore.target = Unknown;
@@ -82,7 +82,7 @@ if(hasrun){
   Emma.target = Unknown;
   Madison.target = Unknown;
   Marie.target = Gavin;
-  Mhalik.target = Unknown;
+  Mhalik.target = SilasL;
   Noah.target = Unknown;
   River.target = Noah;
   SilasK.target = Unknown;
