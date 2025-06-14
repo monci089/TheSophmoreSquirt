@@ -23,7 +23,6 @@ if(hasrun){
   let Fern = new targetlink("Fern");
   let Frances = new targetlink("Frances");
   let Gavin = new targetlink("Gavin");
-  let Grace = new targetlink("Grace");
   let Gracie = new targetlink("Gracie");
   let Halsey = new targetlink("Halsey");
   let John = new targetlink("John");
@@ -63,10 +62,9 @@ if(hasrun){
   Clara.target = Ursula;
   Crenna.target = Crosby;
   Crosby.target = SilasK;
-  Fern.target = Grace;
+  Fern.target = Marie;
   Frances.target = Teri;
   Gavin.target = Unknown;
-  Grace.target = Marie;
   Gracie.target = Joshua;
   Halsey.target = Lenore;
   John.target = Alina;
