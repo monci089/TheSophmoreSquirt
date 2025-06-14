@@ -60,13 +60,13 @@ if(hasrun){
   Bjorn.target = River;
   Chiara.target = Unknown;
   Cielo.target = Chiara;
-  Clara.target = Unknown;
+  Clara.target = Ursula;
   Crenna.target = Crosby;
   Crosby.target = SilasK;
   Fern.target = Grace;
   Frances.target = Teri;
   Gavin.target = Unknown;
-  Grace.target = Unknown;
+  Grace.target = Marie;
   Gracie.target = Joshua;
   Halsey.target = Lenore;
   John.target = Alina;
@@ -77,7 +77,7 @@ if(hasrun){
   Lexi.target = Luella;
   Linden.target = Unknown;
   Logan.target = Crenna;
-  Luciano.target = Unknown;
+  Luciano.target = Abby;
   Luella.target = Soren;
   Emma.target = Unknown;
   Madison.target = Unknown;
