@@ -29,7 +29,6 @@ if(hasrun){
   let Joshua = new targetlink("Joshua");
   let Lenore = new targetlink("Lenore");
   let Leny = new targetlink("Leny");
-  let Lexi = new targetlink("Lexi");
   let Linden = new targetlink("Linden");
   let Logan = new targetlink("Logan");
   let Luciano = new targetlink("Luciano");
@@ -70,7 +69,6 @@ if(hasrun){
   Joshua.target = Clara;
   Lenore.target = Unknown;
   Leny.target = Wylder;
-  Lexi.target = Luella;
   Linden.target = Unknown;
   Logan.target = Crenna;
   Luciano.target = Abby;
@@ -81,7 +79,7 @@ if(hasrun){
   Mhalik.target = SilasL;
   Noah.target = Unknown;
   River.target = Noah;
-  SilasK.target = Unknown;
+  SilasK.target = Luella;
   SilasL.target = Silja;
   Silja.target = Unknown;
   Soren.target = Emma;
