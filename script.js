@@ -23,7 +23,6 @@ if(hasrun){
   let Fern = new targetlink("Fern");
   let Frances = new targetlink("Frances");
   let Gavin = new targetlink("Gavin");
-  let Gracie = new targetlink("Gracie");
   let Halsey = new targetlink("Halsey");
   let John = new targetlink("John");
   let Jonah = new targetlink("Jonah");
@@ -55,7 +54,7 @@ if(hasrun){
   Alina.target = Unknown;
   Amber.target = Jonah;
   Arden.target = Tristyn;
-  Bella.target = Gracie;
+  Bella.target = Joshua;
   Bjorn.target = River;
   Chiara.target = Unknown;
   Cielo.target = Chiara;
@@ -65,7 +64,6 @@ if(hasrun){
   Fern.target = Marie;
   Frances.target = Teri;
   Gavin.target = Unknown;
-  Gracie.target = Joshua;
   Halsey.target = Lenore;
   John.target = Alina;
   Jonah.target = Luciano;
