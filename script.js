@@ -47,7 +47,7 @@ if(hasrun){
   let Tristyn = new targetlink("Tristyn");
   let Ursula = new targetlink("Ursula");
   let Wylder = new targetlink("Wylder");
-  let Unknown= new targetlink("Unknown")
+  let Unknown= new targetlink("Unknown");
   Abby.target = John;
   Aixa.target = Mhalik;
   Alina.target = Lindin;
