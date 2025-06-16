@@ -50,7 +50,7 @@ if(hasrun){
   let Unknown= new targetlink("Unknown")
   Abby.target = John;
   Aixa.target = Mhalik;
-  Alina.target = Unknown;
+  Alina.target = Lindin;
   Amber.target = Jonah;
   Arden.target = Tristyn;
   Bella.target = Joshua;
@@ -62,7 +62,7 @@ if(hasrun){
   Crosby.target = SilasK;
   Fern.target = Marie;
   Frances.target = Teri;
-  Gavin.target = Unknown;
+  Gavin.target = Halsey;
   Halsey.target = Lenore;
   John.target = Alina;
   Jonah.target = Luciano;
