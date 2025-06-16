@@ -49,7 +49,7 @@ if(hasrun){
   let Wylder = new targetlink("Wylder");
   let Unknown= new targetlink("Unknown")
   Abby.target = John;
-  Aixa.target = Unknown;
+  Aixa.target = Mhalik;
   Alina.target = Unknown;
   Amber.target = Jonah;
   Arden.target = Tristyn;
@@ -67,7 +67,7 @@ if(hasrun){
   John.target = Alina;
   Jonah.target = Luciano;
   Joshua.target = Clara;
-  Lenore.target = Unknown;
+  Lenore.target = Lenny;
   Leny.target = Wylder;
   Linden.target = Unknown;
   Logan.target = Crenna;
@@ -86,7 +86,7 @@ if(hasrun){
   Teri.target = Bella;
   Tristyn.target = Amber;
   Ursula.target = Fern;
-  Wylder.target = Unknown;
+  Wylder.target = Cielo;
   hasrun=false
 }
 function isnotin(name, list){
