@@ -67,13 +67,13 @@ if(hasrun){
   John.target = Alina;
   Jonah.target = Luciano;
   Joshua.target = Clara;
-  Lenore.target = Lenny;
+  Lenore.target = Leny;
   Leny.target = Wylder;
   Linden.target = Unknown;
   Logan.target = Crenna;
   Luciano.target = Abby;
   Luella.target = Soren;
-  Emma.target = Unknown;
+  Emma.target = Aixa;
   Madison.target = Unknown;
   Marie.target = Gavin;
   Mhalik.target = SilasL;
