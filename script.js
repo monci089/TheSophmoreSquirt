@@ -8,41 +8,81 @@ if(hasrun){
       playerlist.push(this)
     }
   }
+  
+  let John = new targetlink("John");
+  let Alina = new targetlink("Alina");
+  let Linden = new targetlink("Linden");
+  
+  
+  let Amber = new targetlink("Amber");
+  let Jonah = new targetlink("Jonah");
+  let Luciano = new targetlink("Luciano");
   let Abby = new targetlink("Abby");
   let Aixa = new targetlink("Aixa");
-  let Alina = new targetlink("Alina");
-  let Amber = new targetlink("Amber");
+  
+  
   let Arden = new targetlink("Arden");
+  
   let Bella = new targetlink("Bella");
+  
   let Bjorn = new targetlink("Bjorn");
+  
   let Chiara = new targetlink("Chiara");
+  
   let Cielo = new targetlink("Cielo");
+  
   let Clara = new targetlink("Clara");
+  
   let Crenna = new targetlink("Crenna");
+  
   let Crosby = new targetlink("Crosby");
+  
   let Fern = new targetlink("Fern");
+  
   let Frances = new targetlink("Frances");
+  
   let Gavin = new targetlink("Gavin");
+  
   let Halsey = new targetlink("Halsey");
-  let John = new targetlink("John");
-  let Jonah = new targetlink("Jonah");
+  
+
+  
+  
+  
   let Lenore = new targetlink("Lenore");
+  
   let Leny = new targetlink("Leny");
-  let Linden = new targetlink("Linden");
+  
+  
+  
   let Logan = new targetlink("Logan");
-  let Luciano = new targetlink("Luciano");
+  
+  
+  
   let Luella = new targetlink("Luella");
+  
   let Emma = new targetlink("Emma");
+  
   let Madison = new targetlink("Madison");
+  
   let Marie = new targetlink("Marie");
+  
   let Noah = new targetlink("Noah");
+  
   let River = new targetlink("River");
+  
   let Soren = new targetlink("Soren");
+  
   let Teri = new targetlink("Teri");
+  
   let Tristyn = new targetlink("Tristyn");
+  
   let Ursula = new targetlink("Ursula");
+  
   let Wylder = new targetlink("Wylder");
+  
   let Unknown= new targetlink("Unknown")
+  
   Abby.target = John;
   Aixa.target = Unknown;
   Alina.target = Linden;
